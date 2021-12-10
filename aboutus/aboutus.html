@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="js/owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="js/owlcarousel/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/aboutus.css">
+
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/owlcarousel/owl.carousel.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		  $('.owlCarousel').owlCarousel({
+			    loop:true,
+			    margin:10,
+			    nav:false,
+			    autoplay:true,
+			    autoplayTimeout:5000,
+			    responsive:{
+			        0:{
+			            items:1
+			        },
+			        600:{
+			            items:3
+			        },
+			        1000:{
+			            items:4
+			        }
+			    }
+			})
+
+		  function mainServiveUl(){
+		  	if($(".dialogOverflow").hasClass("displayOn")){
+		  		}else{
+		  			$(".dialogOverflow").addClass("displayOn");
+		  		}
+		  	
+		  }
+
+			$(".serviceTrigger-1").on("click",function(){
+				mainServiveUl();
+				$(".dialogOverflow li div").removeClass("displayOn");
+				$(".serviceInfo-1").addClass("displayOn");
+			})
+			$(".serviceTrigger-2").on("click",function(){
+				mainServiveUl();
+				$(".dialogOverflow li div").removeClass("displayOn");
+				$(".serviceInfo-2").addClass("displayOn");
+			})
+			$(".serviceTrigger-3").on("click",function(){
+				mainServiveUl();
+				$(".dialogOverflow li div").removeClass("displayOn");
+				$(".serviceInfo-3").addClass("displayOn");
+			})
+			$(".serviceTrigger-4").on("click",function(){
+				mainServiveUl();
+				$(".dialogOverflow li div").removeClass("displayOn");
+				$(".serviceInfo-4").addClass("displayOn");
+			})
+		});
+	</script>
+</head>
+<body>
+
+<div style="max-width: 1000px; position: relative; margin: 0 auto;">
+	<h2 class="h2Title">你睡不好的原因，德瑞克都懂</h2>
+	<p>腰酸背痛、肩頸痠痛，或者難入睡、淺眠醒來、睡到汗流浹背，不佳的睡眠用品、環境與心理因素，可能都是你睡不好的原因。</p>
+	<img class="desktopImg" src="images/desktop/m01_desktop.png" alt="">
+	<h2 class="h2Title">你睡不好的原因，德瑞克都懂</h2>
+	<p>德瑞克擁有全台門市與線上諮詢，長達14年經營服務，深入了解各種睡不好的原因。</p>
+	<img class="desktopImg" src="images/desktop/m02_desktop.png" alt="">
+	<h2 class="h2Title">睡不好？交給德瑞克</h2>
+	<p>我們以德國工藝精神為標竿，針對亞洲氣候、睡眠型態、身高體型，為各族群開發適合的睡眠用品。<br><br>讓你的睡眠成為放鬆身心的回復時光，精神飽滿迎接明天。</p>
+
+	<hr class="hrLine">
+
+	<h2 class="h2Title">為何選擇德瑞克？</h2>
+
+	<div class="desktopVersion">
+		<ul class="list4Column serviceDiv">
+			<li class="serviceTrigger-1"><img src="images/common/14years_icn.png" alt=""><p>2008年起<br>經營台灣市場</p></li>
+			<li class="serviceTrigger-2"><img src="images/common/20shop_icn.png" alt=""><p>全台北中南<br>無壓試躺空間</p></li>
+			<li class="serviceTrigger-3"><img src="images/common/cart_icn.png" alt=""><p>直營官網<br>便捷線上購物</p></li>
+			<li class="serviceTrigger-4"><img src="images/common/bed_icn.png" alt=""><p>多樣齊全<br>良好睡眠用品</p></li>
+		</ul>
+		<ul class="list4Column dialogOverflow">
+			<li><div class="dialog serviceInfo-1 displayOn">
+				<ul>
+					<li>2008年起在台灣經營</li>
+					<li>歷經電視購物、直營官網與體驗館開設時期</li>
+				</ul>
+			</div></li>
+			<li><div class="dialog serviceInfo-2">
+				<ul>
+					<li>齊全的試躺品項與專業諮詢服務，價格同步一致</li>
+					<li><a href="https://derekbed.com/store">全台北中南體驗館查詢</a></li>
+				</ul>
+			</div></li>
+			<li><div class="dialog serviceInfo-3">
+				<ul>
+					<li>24小時全年無休開放訂購</li>
+					<li><a href="https://derekbed.com/select-bed">線上挑選指引</a>與<a href="https://lin.ee/Ah7g171" target="_blank">客服諮詢</a></li>
+				</ul>
+			</div></li>
+			<li><div class="dialog serviceInfo-4">
+				<ul>
+					<li>床墊、枕頭、床包組、床底多樣齊全睡眠用品</li>
+					<li>解決各種睡不好的原因</li>
+				</ul>
+			</div></li>
+		</ul>
+	</div>
+
+	<div class="mobileVersion">
+		<ul class="list4Column serviceDiv">
+			<li class="serviceTrigger-1"><img src="images/common/14years_icn.png" alt=""><p>2008年起<br>經營台灣市場</p></li>
+			<li class="serviceTrigger-2"><img src="images/common/20shop_icn.png" alt=""><p>全台北中南<br>無壓試躺空間</p></li>
+		</ul>
+		<ul class="list4Column dialogOverflow">
+			<li><div class="dialog serviceInfo-1 displayOn">
+				<ul>
+					<li>2008年起在台灣經營</li>
+					<li>歷經電視購物、直營官網與體驗館開設時期</li>
+				</ul>
+			</div></li>
+			<li><div class="dialog serviceInfo-2">
+				<ul>
+					<li>齊全的試躺品項與專業諮詢服務，價格同步一致</li>
+					<li><a href="https://derekbed.com/store">全台北中南體驗館查詢</a></li>
+				</ul>
+			</div></li>
+		</ul>
+		<ul class="list4Column serviceDiv">
+			<li class="serviceTrigger-3"><img src="images/common/cart_icn.png" alt=""><p>直營官網<br>便捷線上購物</p></li>
+			<li class="serviceTrigger-4"><img src="images/common/bed_icn.png" alt=""><p>多樣齊全<br>良好睡眠用品</p></li>
+		</ul>
+		<ul class="list4Column dialogOverflow">
+			<li><div class="dialog serviceInfo-3">
+				<ul>
+					<li>24小時全年無休開放訂購</li>
+					<li><a href="https://derekbed.com/select-bed">線上挑選指引</a>與<a href="https://lin.ee/Ah7g171" target="_blank">客服諮詢</a></li>
+				</ul>
+			</div></li>
+			<li><div class="dialog serviceInfo-4">
+				<ul>
+					<li>床墊、枕頭、床包組、床底多樣齊全睡眠用品</li>
+					<li>解決各種睡不好的原因</li>
+				</ul>
+			</div></li>
+		</ul>
+	</div>
+
+	<h2 class="h2Title">德瑞克多樣齊全的睡眠用品</h2>
+	<div class="shopMore" style="background-image: url(images/desktop/bed_img_desktop.png);">
+		<div class="shopInfo">
+		<h3>床墊系列</h3>	
+		<p>德瑞克主力商品，由超過10年製床經驗的職人，取得ISO9001與ISPA睡眠協會雙認證工廠嚴謹製作。</p>
+		<p><a href="https://derekbed.com/category/mattress">了解更多→</a></p>
+		</div>
+	</div>
+
+	<div class="shopMore" style="background-image: url(images/desktop/pillow_img_desktop.png);">
+		<div class="shopInfo">
+		<h3>枕頭系列</h3>	
+		<p>選擇大眾喜愛的材質躺感，適合各種頭頸曲線與睡姿偏好的枕高枕型，強化支撐性的各種枕頭。</p>
+		<p><a href="https://derekbed.com/category/pillow">了解更多→</a></p>
+		</div>
+	</div>
+
+	<div class="shopMore" style="background-image: url(images/desktop/sheet_img_desktop.png);">
+		<div class="shopInfo">
+		<h3>保潔墊系列</h3>	
+		<p>兼具100%防水與物理防螨的床包式保潔墊，採用AdvantaTM防水薄膜科技，24HRs防水維持床墊潔淨。</p>
+		<p><a href="https://derekbed.com/category/waterproofmattresspads">了解更多→</a></p>
+		</div>
+	</div>
+
+	<ul class="list3ColumnShop">
+		<li>
+			<div class="shopMore" style="background-image: url(images/common/bed_open_img.png);">
+				<div class="shopInfo">
+					<h3>床架</h3>	
+					<p><a href="https://derekbed.com/category/Bedframe">了解更多→</a></p>
+					</div>
+			</div>
+		</li>
+		<li>
+			<div class="shopMore" style="background-image: url(images/common/bedding_img.png);">
+				<div class="shopInfo">
+					<h3>床包組</h3>	
+					<p><a href="https://derekbed.com/category/four-piece">了解更多→</a></p>
+					</div>
+			</div>
+		</li>
+		<li>
+			<div class="shopMore" style="background-image: url(images/common/coolset_img.png);">
+				<div class="shopInfo">
+					<h3>涼感系列</h3>	
+					<p><a href="https://derekbed.com/category/cookuru">了解更多→</a></p>
+					</div>
+			</div>
+		</li>
+		<li>
+			<div class="shopMore" style="background-image: url(images/common/e_bed_img.png);">
+				<div class="shopInfo">
+					<h3>電動床</h3>	
+					<p><a href="https://derekbed.com/category/2228">了解更多→</a></p>
+					</div>
+			</div>
+		</li>
+		<li>
+			<div class="shopMore" style="background-image: url(images/common/perfume_img.png);">
+				<div class="shopInfo">
+					<h3>好眠香氛</h3>	
+					<p><a href="https://derekbed.com/category/Sleepyfragrance">了解更多→</a></p>
+					</div>
+			</div>
+		</li>
+		<li>
+			<div class="shopMore">
+				<div class="shopInfo seeMore">
+					<p><a href="https://derekbed.com/category/mattress">看更多→</a></p>
+					</div>
+			</div>
+		</li>
+	</ul>
+
+	<h2 class="h2Title">3大產品特色</h2>
+	<ul class="list3Column">
+		<li><img src="images/common/family_icn.png" alt=""><p>針對各族群<br>開發設計</p><br><p><a href="https://derekbed.com/select-bed">了解更多→</a></p></li>
+		<li><img src="images/common/saba_icn.png" alt=""><p>床墊系列<br>無毒環保膠</p><br><p><a href="https://derekbed.com/toxic-formaldehyde-free-mattress">了解更多→</a></p></li>
+		<li><img src="images/common/Certificate_icn.png" alt=""><p>雙認證工廠<br>製作床墊</p><br><p><a href="https://derekbed.com/certification-and-awards">了解更多→</a></p></li>
+	</ul>
+
+	<div class="mainService">
+		<img class="serviceInfo" src="images/desktop/model_desktop_img.png" alt="">	
+		<div class="serviceInfo serviceDescription">
+			<h3>5大貼心服務</h3>	
+			<img src="images/common/10days_try.png" alt="">
+			<p>我們知道適合的睡眠用品，才能解決睡不好的問題，因此提供全館購買商品10天試睡，不滿意保證可退。</p>
+			<p><a href="https://derekbed.com/tensleep">了解更多→</a></p>
+		</div>
+	</div>
+	<ul class="list4Column">
+		<li><img src="images/common/free_delivery_icn.png" alt=""><p><a href="https://derekbed.com/freeshipping">免運到家</a></p></li>
+		<li><img src="images/common/15years_icn.png" alt=""><p><a href="https://derekbed.com/15yearWarranty">床墊15年保固</a></p></li>
+		<li><img src="images/common/return_icn.png" alt=""><p><a href="https://derekbed.com/15yearWarranty">舊床回收</a></p></li>
+		<li><img src="images/common/card_icn.png" alt=""><p><a href="https://derekbed.com/easyshopping">分期0利率</a></p></li>
+	</ul>
+
+	<h2 class="h2Title">安心守護睡眠健康</h2>
+	<p>從原料到製程通過各項檢驗認證</p>
+	<div class="cercertificateSlider">
+		<img src="images/desktop/Certificate_img_desktop.png" alt="">
+		<div class="owlCarousel owl-carousel owl-theme">
+			<div class="item"><div><img src="images/certificate/iso9001.png" alt=""></div><p>ISO9001 國際品質管理認證</p></div>
+			<div class="item"><div><img src="images/certificate/ispa.png" alt=""></div><p>ISPA 國際睡眠協會認證</p></div>
+			<div class="item"><div><img src="images/certificate/lga.png" alt=""></div><p>LGA無有害物質認證</p></div>
+			<div class="item"><div><img src="images/certificate/oeko_tex.png" alt=""></div><p>Oeko-Tex國際紡織協會認證</p></div>
+			<div class="item"><div><img src="images/certificate/eco_institu.png" alt=""></div><p>eco-INSTITU 安全認證</p></div>
+			<div class="item"><div><img src="images/certificate/mattress_patent.png" alt=""></div><p>床墊透氣散熱證書</p></div>
+		  <div class="item"><div><img src="images/certificate/sgs_rohs_01.png" alt=""></div><p>SGS ROHS檢驗合格</p></div>
+		  <div class="item"><div><img src="images/certificate/sgs_rohs_02.png" alt=""></div><p>SGS ROHS檢驗合格</p></div>
+		  <div class="item"><div><img src="images/certificate/sgs_rohs_03.png" alt=""></div><p>SGS ROHS檢驗合格</p></div>
+		  <div class="item"><div><img src="images/certificate/sgs_rohs_04.png" alt=""></div><p>SGS ROHS檢驗合格</p></div>
+		  <div class="item"><div><img src="images/certificate/sgs_svhc.png" alt=""></div><p>SGS SVHC檢驗合格</p></div>
+			<div class="item"><div><img src="images/certificate/lenzing_lyocell.png" alt=""></div><p>100%萊賽爾天絲蘭精證明</p></div>
+		  <div class="item"><div><img src="images/certificate/enkev_packing_list.png" alt=""></div><p>ENKEV 出貨單據</p></div>
+		  <div class="item"><div><img src="images/certificate/sanitized_tec_report_01.png" alt=""></div><p>T.E.C.山寧泰塵蟎驅離報告</p></div>
+		  <div class="item"><div><img src="images/certificate/sanitized_tec_report_05.png" alt=""></div><p>T.E.C.山寧泰塵蟎驅離報告</p></div>
+		  <div class="item"><div><img src="images/certificate/cookuru_qmax.png" alt=""></div><p>Cookuru Qmax檢驗報告</p></div>
+		</div>
+	</div>	
+
+	<h2 class="h2Title">睡不好？交給德瑞克</h2>
+	<p>我們想讓你每天都睡得更好一點，每天早晨都充滿活力。</p>
+	<ul class="list4Column otherLink">
+		<li><img src="images/common/green_icn01.png" alt=""><p><a href="https://derekbed.com/">了解商品</a></p></li>
+		<li><img src="images/common/green_icn02.png" alt=""><p><a href="https://derekbed.com/store">查詢門市</a></p></li>
+		<li><img src="images/common/green_icn03.png" alt=""><p><a href="">常見Q&A</a></p></li>
+		<li><img src="images/common/green_icn04.png" alt=""><p><a href="https://lin.ee/Ah7g171">線上客服</a></p></li>
+	</ul>
+
+
+	</div>	
+</body>
+</html>	
