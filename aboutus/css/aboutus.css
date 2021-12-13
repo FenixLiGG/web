@@ -5,16 +5,23 @@ body{
 img{
 	max-width: 100%;
 }
+p{
+	font-size: 17px;
+	text-align: left;
+	padding: 0 20px;
+}
+.container{
+	position: relative;
+	margin: 0 auto;
+	max-width: 1152px;
+}
 .h2Title{
 	font-family: Arial;
-  font-size: 22px;
-  color: #729C28;
+  font-size: 23px;
+  color: #708573;
+  font-weight: bold;
   text-align: center;
   margin-top: 50px;
-}
-p{
-	font-size: 20px;
-	text-align: center;
 }
 .desktopImg{
 	display: block;
@@ -25,13 +32,13 @@ p{
 	max-width: 50%;
 }
 .hrLine{
-	max-width: 60%;
-	border: 1px solid #6b8671;
+	max-width: 100%;
+	border: 1px solid #708573;
 	margin: 40px auto;
 }
 .list4Column{
 	list-style: none;
-	max-width: 700px;
+	/*max-width: 700px;*/
 	margin: 0 auto 30px;
 	overflow: hidden;
 	padding: 0;
@@ -43,15 +50,18 @@ p{
 	text-align: center;
 }
 .list4Column li img{
-	max-width: 80%;
+	/*max-width: 80%;*/
+	width: 100%;
 }
 .list4Column li p{
 	margin: 0;
+	text-align: center;
 }
 .list4Column li a{
-	color: #729C28;
-	border-bottom: 2px solid #729C28;
+	color: #708573;
+	border-bottom: 1px solid #708573;
 	text-decoration: none;
+	padding-bottom: 5px;
 }
 .otherLink.list4Column li a{
 	border: none;
@@ -60,20 +70,24 @@ p{
 	background-size: cover;
 	color: #fff;
 	text-align: left;
-	margin-bottom: 15px;
+	margin-bottom: 5px;
+	border: 1px solid #d3bc8d;
 	transition: all 0.5s ease;
 }
-.shopMore h3,.list4Column li h3{
-	font-size: 24px;
+.shopMore h3, .list4Column li h3{
+	font-size: 23px;
 }
 .shopMore p{
 	text-align: left;
+	font-size: 14px;
+	padding: 0;
 }
 .shopMore a{
 	text-align: left;
 	color: #e7bf97;
 	text-decoration: none;
-	border-bottom: 2px solid #e7bf97;
+	border-bottom: 1px solid #e7bf97;
+	padding-bottom: 5px;
 }
 .shopInfo{
 	min-height: 200px;
@@ -82,17 +96,32 @@ p{
 	transition: all 0.5s ease;
 }
 .shopMore:hover .shopInfo{
-	background-color: rgba(113,133,112,0.7);
+	background-color: rgba(112,133,115,0.7);
 	opacity: 1;
+}
+.threeFeatures{
+	position: relative;
+	overflow: hidden;
+	background-color: #f8f8f8;
+	margin-bottom: 4px;
+}
+.list3ColumnShop .shopMore .shopInfo h3{
+	text-align: center;
+	margin-top:20%; 
+	margin-bottom: 5px;
+}
+.list3ColumnShop .shopMore .shopInfo p{
+	text-align: center;
+	margin: 0;
 }
 .shopMore .seeMore{
-	background-color: rgba(113,133,112,0.7);
+	background-color: rgba(112,133,115,0.7);
 	opacity: 1;
 }
-.shopMore .seeMore p{
-	margin-top: 80px;
+.list3ColumnShop  .shopMore .seeMore p{
+	margin-top: 83px;
 	text-align: center;
-	font-size: 26px;
+	font-size: 23px;
 }
 .shopMore .seeMore p a{
 	color: #fff;
@@ -136,6 +165,7 @@ p{
 .list3Column li p{
 	color: #729C28;
 	margin: 0;
+	text-align: center;
 }
 .list3Column li p a{
 	color: #e7bf97;
@@ -144,7 +174,7 @@ p{
 }
 .mainService{
 	overflow: hidden;
-	background-color: #718570;
+	background-color: #708573;
 	margin-bottom: 30px;
 }
 .mainService .serviceInfo{
@@ -153,10 +183,10 @@ p{
 	margin: 0;
 }
 .serviceDescription h3{
-	font-size: 26px;
+	font-size: 23px;
 	color: #fff;
 	text-align: center;
-	margin-top: 10vw;
+	margin-top: 12vw;
 }
 .serviceDescription p{
 	width: 80%;
@@ -173,11 +203,15 @@ p{
 	text-align: left;
 	color: #e7bf97;
 	text-decoration: none;
-	border-bottom: 2px solid #e7bf97;
+	border-bottom: 1px solid #d3bc8d;
+	padding-bottom: 5px;
 }
 .cercertificateSlider{
 	overflow: hidden;
 	background-color: #97aa9c;
+	-webkit-border-bottom-left-radius: 30px;
+	-moz-border-radius-bottomleft: 30px;
+	border-bottom-left-radius: 30px;
 }
 .owlCarousel{
 	margin: 20px 0;
@@ -187,9 +221,14 @@ p{
 	margin: 0 auto;
 }
 .owlCarousel .item div{
-	min-height: 270px;
+	min-height: 310px;
 	display: flex;
   align-items: center;
+}
+.owl-stage-outer p{
+	text-align: center;
+	font-size: 11px;
+	color: #414141;
 }
 .list4Column.serviceDiv{
 	margin-bottom: 0;
@@ -211,7 +250,7 @@ p{
 }
 .dialog{
 	display: none;
-  background-color: #9ba99b;
+  background-color: rgba(112,133,115,0.7);
   position: relative;
   padding:30px 20px;
  }
@@ -236,7 +275,7 @@ p{
 	height: 0;
 	border-style: solid;
 	border-width: 0 20px 20px 20px;
-	border-color: transparent transparent #9ba99b transparent;
+	border-color: transparent transparent rgba(112,133,115,0.7) transparent;
 }
 .dialog.serviceInfo-1:before{
   left: 13%;
@@ -258,21 +297,109 @@ p{
 .mobileVersion{
 	display: none;
 }
+.centerStyle{
+	text-align: center;
+}
 
 
+
+/* Start 768 */
 @media screen and (max-width:768px){
+p{
+	font-size: 14px;
+}
+.h2Title{
+	font-size: 20px;
+}
+.desktopVersion{
+	display: none;
+}
+.mobileVersion{
+	display: block;
+}
+.list4Column li{
+	width: 50%;
+	margin-bottom: 0px;
+}
+.dialog.displayOn, .dialogOverflow.displayOn{
+	padding: 20px 0;
+}
+.dialog ul{
+	margin-left: 30px;
+}
+.dialogOverflow li{
+	width: 100%;
+	margin: 0px 0px;
+	font-size: 16px;
+	line-height: 1.5;
+}
+.dialog.serviceInfo-1:before,.dialog.serviceInfo-3:before{
+  left: 23%;
+}
+.dialog.serviceInfo-2:before,.dialog.serviceInfo-4:before{
+  left: 73%;
+}
+.shopMore h3, .list4Column li h3{
+	font-size: 20px;
+}
+.list3ColumnShop .shopMore .seeMore p{
+	font-size: 20px;
+}
+.list3ColumnShop .shopMore .shopInfo h3{
+	margin-top: 33%;
+}
+.list4Column li p{
+	font-size: 16px;
+}
+.list3Column li p{
+	font-size: 16px;
+}
+.list3Column{
+	display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.list3Column li{
+	width: 50%;
+}
+.mainService .serviceInfo{
+	width: 100%;
+	float: none;
+}
 .serviceDescription h3{
 	margin-top: 5vw;
+	font-size: 20px;
+}
+.serviceDescription img{
+	max-width: 546px;
 }
 .serviceDescription p{
-	margin-top: 3vw;
-	font-size: 18px;
+	margin-top: 4vw;
+	font-size: 14px;
+}
+.mainService .serviceDescription{
+	padding-bottom: 40px;
+}
+.ourService.list4Column li p{
+	font-size: 14px;
+}
+.owl-stage-outer p{
+	font-size: 12px;
+}
+.otherLink.list4Column li a{
+	font-size: 23px;
+}
+.centerStyleMobile{
+	text-align: center;
 }
 
 
 }/* end 768 */
 
-@media screen and (max-width:480px){
+
+
+/* Start 480 */
+/*@media screen and (max-width:480px){
 p{
 	font-size: 16px;
 }
@@ -330,9 +457,6 @@ p{
 	width: 100%;
 	float: none;
 }
-.mainService .serviceDescription{
-	padding-bottom: 40px;
-}
 .owlCarousel .item div{
 	min-height: 300px;
 }
@@ -342,4 +466,4 @@ p{
 }
 
 
-}/* end 400 */
+}*//* end 400 */
